@@ -56,7 +56,8 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 CornerRadius="4"
-                IsChecked="{x:Bind Path=ViewModel.IsPinned, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                IsChecked="{x:Bind Path=ViewModel.IsPinned, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                ToolTipService.ToolTip="Pin on top">
 
                 <FontIcon FontSize="12" Glyph="&#xE718;" />
 
