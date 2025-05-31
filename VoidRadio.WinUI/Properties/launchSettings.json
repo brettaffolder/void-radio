@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VoidRadio.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VoidRadio.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

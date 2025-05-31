@@ -1,3 +1,7 @@
 <Solution>
   <Project Path="VoidRadio.Core/VoidRadio.Core.csproj" Id="e349a4b4-9776-4499-9e0f-d3a4bebfe9f0" />
+  <Project Path="VoidRadio.WinUI/VoidRadio.WinUI.csproj" Id="059a00a6-f2aa-4e23-9d8d-5fe614db31af">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
 </Solution>
