@@ -27,6 +27,8 @@ public sealed partial class ShellWindow : Window
 
         XTitleBar.Loaded += (_, _) => SetDragRegion();
         XTitleBar.SizeChanged += (_, _) => SetDragRegion();
+
+        ViewModel.Setup();
     }
 
     private void OnAppWindowChanged(AppWindow s, AppWindowChangedEventArgs e)
