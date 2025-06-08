@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:VoidRadio.WinUI.Views"
     x:Name="XShellWindow"
     mc:Ignorable="d">
 
@@ -75,13 +76,13 @@
                 IsChecked="{x:Bind Path=ViewModel.IsDark, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                 ToolTipService.ToolTip="Toggle theme">
 
-                <FontIcon FontSize="12" Glyph="{x:Bind Path=ViewModel.Icon, Mode=OneWay}" />
+                <FontIcon FontSize="12" Glyph="{x:Bind Path=ViewModel.ThemeIcon, Mode=OneWay}" />
 
             </ToggleButton>
 
         </Grid>
 
-        <Grid Grid.Row="1" />
+        <views:PlayerPage Grid.Row="1" />
 
     </Grid>
 

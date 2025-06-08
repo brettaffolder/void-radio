@@ -10,6 +10,8 @@ using Microsoft.Windows.AppLifecycle;
 using VoidRadio.WinUI.Contracts;
 using VoidRadio.WinUI.Extensions;
 using VoidRadio.WinUI.Services;
+using VoidRadio.WinUI.ViewModels;
+using VoidRadio.WinUI.Views;
 
 using Windows.Win32;
 using Windows.Win32.Foundation;
@@ -34,8 +36,10 @@ public partial class App : Application
                 services.AddSingleton<IThemeService, ThemeService>();
 
                 services.AddSingleton<ShellViewModel>();
+                services.AddSingleton<PlayerViewModel>();
 
                 services.AddSingleton<ShellWindow>();
+                services.AddSingleton<PlayerPage>();
             })
             .Build();
     }

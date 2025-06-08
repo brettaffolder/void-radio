@@ -19,13 +19,13 @@ public partial class ShellViewModel(
     public partial bool IsDark { get; set; } = true;
 
     [ObservableProperty]
-    public partial string Icon { get; set; } = "\uE706";
+    public partial string ThemeIcon { get; set; } = "\uE706";
 
     public void Setup()
     {
         IsPinned = false;
         IsDark = _theme.Theme == ElementTheme.Dark || _theme.Theme == ElementTheme.Default && Application.Current.RequestedTheme == ApplicationTheme.Dark;
-        Icon = IsDark ? "\uE708" : "\uE706";
+        ThemeIcon = IsDark ? "\uE708" : "\uE706";
     }
 
     partial void OnIsPinnedChanged(bool value)
@@ -44,6 +44,6 @@ public partial class ShellViewModel(
         var theme = IsDark ? "Dark" : "Light";
         _theme.Update(_theme.Accent, theme);
 
-        Icon = IsDark ? "\uE708" : "\uE706";
+        ThemeIcon = IsDark ? "\uE708" : "\uE706";
     }
 }
